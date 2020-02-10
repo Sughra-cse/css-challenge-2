@@ -24,7 +24,7 @@ list-style:none;
 .container1 nav ul li{
     display: block;
     line-height: 50px;
-    margin: 0 5px;
+    margin: 0 8px;
     cursor: pointer;
 }
 .container1 nav ul li a{
@@ -33,6 +33,7 @@ list-style:none;
     padding: 8px 16px;
     font-weight: bold;
     font-size: 1.1rem;
+    border-radius: 3px;
 }
 .container1 nav ul li.active{
     border-top: 1px solid grey;
@@ -56,6 +57,7 @@ list-style:none;
 #check{
     display:none;
 } 
+@media(max-width:940px){
     label.logo{
         padding-left: 20px;
     }
@@ -73,10 +75,14 @@ list-style:none;
     #check:checked ~ul{
         left:0;
     } 
-
+}
 .container2{
 padding: 10px;
 margin: 20px 2px 30px 2px;
+}
+.container2 img{
+    width:350px;
+    height:210px;
 }
 .container3 h3{
  color:hsla(229, 11%, 40%, 0.76);
@@ -111,4 +117,86 @@ padding: 10px;
 font-weight: lighter;
 color:white;
 border-radius: 10px;
+}
+@media (min-width:700px){
+    .container{
+        width:80%;
+    }
+    .container2 img{
+      width:50vh;
+      height: 30vh;
+        }
+        .container3 h3{
+            font-size:1.2rem ;
+            margin: 8px;
+            padding: 20px;
+        }
+        .container3 h2{
+            font-size: 1.5rem;
+            margin: 8px;
+            padding: 20px;
+        }
+        .container3 p{
+            font-size: 1.6rem;
+            margin: 8px;
+            padding: 20px;
+        }
+        .container3 h5{
+            font-size: 1.2rem;
+            margin: 8px;
+        }
+        .container3 h5 button{
+            font-size: 1.2rem;
+        }
+        .container1 nav label.checkbtn{
+            margin-right:90px ;
+        }
+}
+@media (min-width:1100px){
+    .container{
+        width:95%;
+        margin: 0 auto;
+    }
+.container1 nav{
+width:95%;
+height: 80px;
+}
+.container1 nav ul{
+    margin-right: 10px;
+    display: inline;
+
+}
+.container1 nav ul li{
+margin: 0 5px;
+float: right;
+}
+.container1 nav ul li.active{
+    border-style:none ;
+    padding: 0px;
+}
+.container1 nav ul li a{
+ font-size: 1.7rem;
+ float: right;
+}
+.checkbtn{
+    display: none;
+}
+.container2{
+    float: right;
+    /* margin-top: 70px; */
+    margin: 70px 5px 2px 5px;
+    width:40%;
+}
+.container2 img{
+    width:550px;
+    height: 60vh;
+    margin: 0px;
+    padding: 0px;
+}
+.container3{
+    float: left;
+    margin-top: 70px;
+    /* width:40%; */
+    margin:70px 2px auto 2px;
+}
 }
